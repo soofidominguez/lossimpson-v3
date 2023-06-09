@@ -1,0 +1,19 @@
+
+//import font
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//imports base
+@import 'base/vars';
+@import 'base/utilities'; 
+@import 'base/reset';
+
+
+//imports components
+@import 'components/navbar';
+@import 'components/footer';
+
+//imports layout
+@import 'layout/index';
+@import 'layout/medias';
+
+

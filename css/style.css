@@ -1,0 +1,290 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*Quita el formato por defecto del navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; /*hace que el calculo de padding sea el mismo que el tamaño que tenga*/
+}
+
+.bg-nav {
+  background-color: #a8a8e7;
+}
+
+.navbar-nav {
+  display: flex;
+}
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 253, 153);
+}
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after {
+  background-color: rgb(255, 253, 153);
+  transition: background-color 0.3s ease;
+}
+
+.container-fluid {
+  color: rgb(255, 253, 153);
+}
+
+.navbar-brand img {
+  width: 140px;
+  margin: 0px 0px 0px 40px;
+}
+
+.navbar-toggler {
+  --bs-border-width: solid $navbar-color;
+  border: 2px solid rgb(255, 253, 153);
+  color: transparent;
+}
+.navbar-toggler .bi {
+  color: rgb(255, 253, 153);
+}
+
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin: 0 5px;
+}
+
+.btn-outline-success {
+  margin: 10px 40px;
+  border-width: 2px;
+  font-weight: bold;
+  color: rgb(255, 253, 153);
+  border-color: rgb(255, 253, 153);
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: none;
+}
+.btn-outline-success:hover {
+  background-color: rgb(255, 253, 153);
+  color: #7474e9;
+  border-color: rgb(255, 253, 153);
+}
+
+.logo-footer {
+  width: 40%;
+}
+
+body {
+  cursor: url("../../Imagenes/cursor.png"), auto;
+}
+
+.matt {
+  max-width: 100%;
+  object-fit: cover;
+  height: 90vh;
+  border-radius: 0;
+  border: none;
+  padding: 30px;
+}
+.matt .row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-body {
+  margin: 30px;
+}
+
+.card-title { /*titulo matt groening*/
+  font-size: 42px;
+  margin: 60px 50px 30px 0px;
+  font-weight: bold;
+}
+
+.card-text { /*texto matt groening*/
+  font-size: 18px;
+  margin: 10px 50px 20px 0px;
+}
+
+.img-fluid {
+  margin: auto;
+  object-fit: contain;
+}
+
+.bg {
+  background-image: url("../Imagenes/Cielo.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.bg h2 {
+  font-weight: bold;
+  color: #191919;
+}
+
+.cards {
+  text-align: center;
+  padding: 0px 20px;
+  background-color: #a8a8e7;
+  background-image: url("../Imagenes/Cielo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__body {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: calc(50% - 15px);
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.cards__body img {
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+  padding: 10px;
+}
+.cards__body h2 {
+  padding: 15px;
+  font-weight: bold;
+}
+.cards__body p {
+  padding: 15px;
+}
+
+.bg-header {
+  padding: 30px;
+  background-image: url("../Imagenes/Cielo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bg-header .card__header {
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid rgb(255, 253, 153);
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+  padding: 10px;
+}
+.bg-header h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: #a8a8e7;
+}
+.bg-header hr {
+  border-top: 2px solid #7474e9;
+  margin: 10px 0;
+}
+.bg-header p {
+  padding: 10px;
+  font-size: 16px;
+  color: #a8a8e7;
+}
+
+.abotme-title {
+  color: inherit;
+  text-decoration: none;
+}
+.abotme-title .bi {
+  color: rgb(255, 253, 153);
+}
+.abotme-title.-linkedin {
+  margin-left: 10px;
+}
+
+.card-bodyaboutme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card-bodyaboutme img {
+  border-radius: 10px;
+  margin: 10px 30px;
+  width: 20%;
+}
+
+@media screen and (max-width: 891px) {
+  .cards {
+    flex-direction: column; /* Cambia la dirección de las cards a una columna */
+    align-items: center; /* Centra las cards horizontalmente */
+  }
+  .cards__body {
+    width: 100%; /* Las cards ocuparán el ancho completo */
+    margin-bottom: 20px; /* Agrega un margen inferior */
+    overflow: hidden; /* Recorta el contenido que exceda el tamaño de la card */
+  }
+  .matt {
+    flex-direction: column; /* Cambia la dirección de las cards a una columna */
+    align-items: center; /* Centra las cards horizontalmente */
+    width: 100%; /* Las cards ocuparán el ancho completo */
+    padding: 15px;
+    height: 90%;
+  }
+  .card-body {
+    margin: 20px 0px;
+  }
+  .card-title {
+    margin: 0px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-bodyaboutme {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .card-bodyaboutme img {
+    width: 80%;
+    justify-items: center;
+    margin: 0px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo-footer {
+    width: 90px; /* Ajusta el ancho de la imagen según tus necesidades */
+    order: 2; /* Cambia el orden de aparición de la imagen en el flujo */
+    margin: 20px;
+  }
+  .nav {
+    order: 3; /* Cambia el orden de aparición de la lista de navegación en el flujo */
+  }
+  .nav-link {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar-brand img {
+    margin-left: 0px;
+    max-width: 60%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

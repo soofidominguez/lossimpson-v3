@@ -1,0 +1,16 @@
+@mixin space($margin,$pading){
+    margin: $margin;
+    padding: $pading;
+}
+
+@mixin flex($display,$direction,$justify,$aling) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin fit($width,$fit) {
+    max-width: $width;
+    object-fit: $fit;
+}
