@@ -1,11 +1,9 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-/*Quita el formato por defecto del navegador*/
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  box-sizing: border-box; /*hace que el calculo de padding sea el mismo que el tamaño que tenga*/
+  box-sizing: border-box;
 }
 
 .bg-nav {
@@ -104,13 +102,13 @@ body {
   margin: 30px;
 }
 
-.card-title { /*titulo matt groening*/
+.card-title {
   font-size: 42px;
   margin: 60px 50px 30px 0px;
   font-weight: bold;
 }
 
-.card-text { /*texto matt groening*/
+.card-text {
   font-size: 18px;
   margin: 10px 50px 20px 0px;
 }
@@ -202,7 +200,7 @@ body {
 }
 .bg-header p {
   padding: 10px;
-  font-size: 16px;
+  font-size: 20px;
   color: #a8a8e7;
 }
 
@@ -231,18 +229,18 @@ body {
 
 @media screen and (max-width: 891px) {
   .cards {
-    flex-direction: column; /* Cambia la dirección de las cards a una columna */
-    align-items: center; /* Centra las cards horizontalmente */
+    flex-direction: column;
+    align-items: center;
   }
   .cards__body {
-    width: 100%; /* Las cards ocuparán el ancho completo */
-    margin-bottom: 20px; /* Agrega un margen inferior */
-    overflow: hidden; /* Recorta el contenido que exceda el tamaño de la card */
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
   }
   .matt {
-    flex-direction: column; /* Cambia la dirección de las cards a una columna */
-    align-items: center; /* Centra las cards horizontalmente */
-    width: 100%; /* Las cards ocuparán el ancho completo */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 15px;
     height: 90%;
   }
@@ -269,12 +267,12 @@ body {
     align-items: flex-start;
   }
   .logo-footer {
-    width: 90px; /* Ajusta el ancho de la imagen según tus necesidades */
-    order: 2; /* Cambia el orden de aparición de la imagen en el flujo */
+    width: 90px;
+    order: 2;
     margin: 20px;
   }
   .nav {
-    order: 3; /* Cambia el orden de aparición de la lista de navegación en el flujo */
+    order: 3;
   }
   .nav-link {
     padding: 0px;
