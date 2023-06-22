@@ -12,11 +12,22 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
         crossorigin="anonymous"
       />
+
       <!--link iconos de bootstrap-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+      <!--Link animation.css-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
       
+      <!--Link aos-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <!--Link a css-->
       <link rel="stylesheet" href="css/style.css" />
+
 
 
     </head>
@@ -66,13 +77,13 @@
         </nav>
 
         <section>
-          <div class="card matt">
+          <div class="card matt animate__animated animate__fadeInUp">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
                   <h1 class="card-title">Matt Groening</h1>
                   <p class="card-text">
-                    Los Simpson, es serie más vista en el mundo con 34 temporadas. Empezó siendo una serie de cortos, que se reproducian antes de la tanda publicitaria en el programa de Tracey Ullman Show en 1987. Estos cortos tenian una duración de al rededor de un minuto Su creador Matt Groening reveló que le tomó solo 15 minutos elaborar la historia de esta familia americana. Sobre el color de esta familia se ha dicho mucho pero la realidad es que Groening pensó que el color amarillo sería ideal y llamaría la atención de los espectadores al momento de hacer zapping. 
+                    Creador de la serie más vista en el mundo con 34 temporadas. Empezó siendo una serie de cortos, que se reproducian antes de la tanda publicitaria en el programa de Tracey Ullman Show en 1987. Estos cortos tenian una duración de al rededor de un minuto Su creador Matt Groening reveló que le tomó solo 15 minutos elaborar la historia de esta familia americana. Sobre el color de esta familia se ha dicho mucho pero la realidad es que Groening pensó que el color amarillo sería ideal y llamaría la atención de los espectadores al momento de hacer zapping. 
                     La serie está en los Récord Guinness como el “show televisivo” con más estrellas invitadas en toda la historia.
                   </p>
                 </div>
@@ -87,24 +98,26 @@
         
 
         <section class="bg">
+          <div data-aos="fade-up">
           <h2>Otras creaciones</h2>
+        </div>
         </section>
 
           <section class="cards">
-            <div class="cards__body">
+            <div class="cards__body" data-aos="flip-left">
                 <img src="Imagenes/Cards-1.png" alt="Ilustración de 'La vida en el infierno', la famosa historieta de Matt Groening. En el parque, se ven varios personajes caricaturescos, incluyendo tres conejos con expresiones vivaces y dos niños idénticos. El parque presenta un amplio cielo celeste con nubes, césped verde y un ambiente animado y divertido. La ilustración refleja el estilo distintivo de Matt Groening y captura el espíritu juguetón y humorístico de 'La vida en el infierno'.">
                 <h2>Vida en el infierno</h2>
                 <p>Tira cómica que simulaba la mala experiencia de vida en Los Ángeles. Trataba de las aventuras de conejos antropomórficos y amantes homosexuales. En ella se satirizaban el amor, el trabajo y el sexo.
                 Los personajes con orejas de conejo y su mirada llena de sarcasmo y acidez llegaron a 250 diarios de Estados Unidos. </p>
             </div>
 
-            <div class="cards__body">
+            <div class="cards__body" data-aos="flip-left">
                 <img src="Imagenes/Cards-2.png" alt="Ilustración de Futurama, donde se ven los personajes principales: Fry, Leela y Bender. Fry se encuentra en el centro de la escena, con Leela y Bender a su lado. Los tres personajes están portando un arma, listos para enfrentar alguna situación desafiante. Detrás de ellos, en una escala más pequeña, se distinguen el Doctor Zoidberg y el Profesor Hubert Farnsworth. La ilustración captura el espíritu aventurero y futurista de Futurama, con sus personajes emblemáticos y un ambiente lleno de acción y humor.">
                 <h2>Futurama</h2>
                 <p>Matt Groening en asociación con David X. Cohen, productor y guionista de 'Los Simpson'. Crearon una serie de nostalgia futurística; trata de la melancolía hacia el pasado y hacia el propio futuro. Cuenta  las aventuras de un repartidor de pizza, Philip J. Fry, que cae por casualidad en una cápsula criogénica y despierta mil años después.</p>
             </div>
 
-            <div class="cards__body">
+            <div class="cards__body" data-aos="flip-left">
                 <img src="Imagenes/Cards-3.png" alt="Ilustración de los personajes principales de Desencanto, en la imagen, se ven los tres protagonistas: la Princesa Bean, el Elfo y Luci. La Princesa Bean se encuentra montando a lomos de su caballo mientras sostiene un vaso de cerveza en una mano, mostrando su espíritu aventurero. El Elfo parece tener miedo, con una expresión nerviosa en su rostro, mientras que Luci se muestra contento y emocionado con la situación.">
                 <h2>Desencanto</h2>
                 <p>En un reino llamado Dreamland, vive la princesa Tiabeanie que tras pactar un matrimonio, decide huir y escapar de sus obligaciones matrimoniales, prefiere la cerveza y la aventura.
@@ -116,7 +129,7 @@
         <!--about me-->
         
         <section id="aboutme" class="bg-header">
-            <div class="card__header">
+            <div class="card__header" data-aos="fade-up" data-aos-duration="1000">
               <div class="card-header">
                 <h3>
                   <a class="abotme-title" href="https://www.linkedin.com/in/sofia-lorena-dominguez/" target="_blank">
@@ -127,7 +140,7 @@
                 <hr> <!-- Agrega el elemento hr para la línea divisoria -->
               </div>
               <div class="card-bodyaboutme">
-                <img src="Imagenes/aboutme.png" alt="Selfie de la creadora de la página web en estilo Simpson. En la imagen, se retrata con su característica cara al estilo de Los Simpsons, con piel amarilla y grandes ojos redondos y una sonrrisa. La imagen muestra a Sofía diseñadora y creadora de la página web. La imagen captura el espíritu creativo y lúdico del autora, fusionando el mundo de los Simpsons con su propia personalidad y trabajo realizado.">
+                <img src="Imagenes/aboutme2.png" alt="Selfie de la creadora de la página web en estilo Simpson. En la imagen, se retrata con su característica cara al estilo de Los Simpsons, con piel amarilla y grandes ojos redondos y una sonrrisa. La imagen muestra a Sofía diseñadora y creadora de la página web. La imagen captura el espíritu creativo y lúdico del autora, fusionando el mundo de los Simpsons con su propia personalidad y trabajo realizado.">
                 <p class="blockquote mb-0">Hola! Mi nombre es Sofía &#128522
                 Recientemente he desarrollado un emocionante proyecto: mi propia página web que funciona como un portfolio personal. En esta página, he combinado mi pasión por el diseño web y mi amor por los personajes de Los Simpson. Cada sección de mi página está dedicada a explorar y analizar a fondo a cada uno de los personajes icónicos de la familia Simpson. Desde Homero, Marge, Bart, Lisa hasta la tierna Maggie, he creado un espacio donde los visitantes pueden descubrir datos interesantes, curiosidades y detalles sobre estos personajes amados por muchos. Mi objetivo con esta página web es mostrar mis habilidades de diseño y desarrollo.
                 ¡Espero que disfrutes explorando mi portfolio! </p>
@@ -140,14 +153,14 @@
         
 
           <div class="container">
-            <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top footer">
-              <p class="col-md-4 mb-0 text-body-secondary"> 2023 | Sofía Dominguez</p>
-          
+            <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top footer w-100">
+              <p class="col-md-4 mb-0 text-body-secondary col-md-4 text-md-start ms-md-auto">2023 | Sofía Dominguez</p>
+            
               <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="Imagenes/Logo.png" class="logo-footer" alt="El logo de Los Simpson: pero en ingles con el nombre 'The Simpsons' escrito en una tipografía amarilla brillante. Las letras son de estilo redondeado y están dispuestas de forma armoniosa. La palabra 'The' está ubicada encima de la palabra 'Simpsons', y ambas tienen un efecto de sombra que las hace destacar sobre un fondo violeta sólido. Este icónico logo es reconocible al instante y representa la marca de la popular serie animada 'Los Simpson'.">
+                <img src="Imagenes/Logo.png" class="logo-footer" alt="El logo de Los Simpson: pero en ingles con el nombre 'The Simpsons' escrito en una tipografía amarilla brillante. Las letras son de estilo redondeado y están dispuestas de forma armónica. La palabra 'The' está ubicada encima de la palabra 'Simpsons', y ambas tienen un efecto de sombra que las hace destacar sobre un fondo violeta sólido. Este icónico logo es reconocible al instante y representa la marca de la popular serie animada 'Los Simpson'.">
               </a>
-          
-              <ul class="nav col-md-4 justify-content-end">
+            
+              <ul class="nav col-md-4 justify-content-end justify-content-md-center">
                 <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
                 <li class="nav-item"><a href="https://www.linkedin.com/in/sofia-lorena-dominguez/" class="nav-link px-2 text-body-secondary" target="_blank">Contacto</a></li>
               </ul>
@@ -162,6 +175,13 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
       ></script>
+
+
+      <!--Script aos-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
     </body>
   </html>

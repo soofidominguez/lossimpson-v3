@@ -16,6 +16,16 @@
       <!--link iconos de bootstrap-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+      <!--Link animation.css-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      
+      <!--Link aos-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
       <!--Link a css-->
       <link rel="stylesheet" href="../css/style.css" />
 
@@ -23,8 +33,8 @@
     </head>
 
     <title>Homero J. Simpson</title>
-    <meta name="description" content="Explora el fascinante mundo creado por Matt Groening, el genio detrás de esta exitosa franquicia. Aquí encontrarás una breve reseña de Matt Groening, así como información sobre sus creaciones más destacadas, como 'La vida en el infierno', 'Futurama' y 'Desencanto'.">
-    <meta name="keywords" content="Los Simpson, Matt Groening, Vida en el infierno, Futurama, Desencanto, creaciones de Matt Groening">
+    <meta name="description" content="Descubre curiosidades sobre Homero Simpson, el icónico personaje de Los Simpson. Conoce más sobre su personalidad, historia y las divertidas situaciones en las que se ha visto envuelto.">
+    <meta name="keywords" content="Los Simpson, Homero Simpson, Vida de Homero Simpson, Curiosidades sobre Homero Simpson">
 
     <body>
       <header>
@@ -67,7 +77,7 @@
         </nav>
 
         <section>
-          <div class="card matt">
+          <div class="card matt animate__animated animate__fadeInUp">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
@@ -87,24 +97,26 @@
         
 
         <section class="bg">
-          <h2>Curiosidades</h2>
+          <div data-aos="fade-up">
+            <h2>Curiosidades</h2>
+          </div>
         </section>
 
         <section>
           <section class="cards">
-            <div class="cards__body">
+            <div class="cards__body" data-aos="flip-left">
                 <img src="../Imagenes/homero dona.png" alt="">
                 <h2>Donas en el espacio</h2>
                 <p>En 2007, la cadena de televisión Fox organizó una campaña promocional en la que enviaron una réplica de un donut gigante al espacio como parte de la película "Los Simpson: La película". El donut flotó en la estratosfera antes de regresar a la Tierra.</p>
             </div>
 
-            <div class="cards__body">
+            <div class="cards__body" data-aos="flip-left">
                 <img src="../Imagenes/d'ohfrasehomero.png" alt="">
                 <h2>"D'oh!" en el diccionario</h2>
                 <p>La icónica expresión de Homero, ha sido tan popular que se agregó al diccionario inglés. Desde 2001, "D'oh!" se incluye en el Oxford English Dictionary, y se define como una interjección que expresa frustración o la realización de un error tonto.</p>
             </div>
 
-            <div class="cards__body">
+            <div class="cards__body" data-aos="flip-left">
                 <img src="../Imagenes/homero.png" alt="">
                 <h2>Cumpleaños de Homero</h2>
                 <p>Episodio 16 Temporada 4 ‘La Promesa’: a través de la licencia de conducir de Homero Simpson se revela su fecha de nacimiento siendo el 12 de mayo de 1956 el día de su cumpleaños, como también el de su perro ‘Ayudante de Santa’ o ‘Huesos’ y el del mismísimo Matt Groening. </p>
@@ -139,6 +151,12 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
       ></script>
+
+            <!--Script aos-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
 
     </body>
   </html>
