@@ -16,18 +16,28 @@
       <!--link iconos de bootstrap-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+      <!--Link animation.css-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      
+      <!--Link aos-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <!--Link a css-->
       <link rel="stylesheet" href="../css/style.css" />
+
 
     </head>
 
     <title>Bart Simpson</title>
-    <meta name="description" content="Explora el fascinante mundo creado por Matt Groening, el genio detrás de esta exitosa franquicia. Aquí encontrarás una breve reseña de Matt Groening, así como información sobre sus creaciones más destacadas, como 'La vida en el infierno', 'Futurama' y 'Desencanto'.">
-    <meta name="keywords" content="Los Simpson, Matt Groening, Vida en el infierno, Futurama, Desencanto, creaciones de Matt Groening">
 
+      <meta name="description" content="plora la biografía detallada de Lisa Simpson, el emblemático personaje de la famosa serie de televisión Los Simpson. Entrá y descubrí algunas curiosidades">
+      <meta name="keywords" content="Los Simpson, Bart Simpson, Vida de Bart Simpson, Curiosidades sobre Bart Simpson">
+      
     <body>
       <header>
-        
         <nav class="navbar navbar-expand-lg bg-nav">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"
@@ -66,7 +76,7 @@
         </nav>
 
         <section>
-          <div class="card matt">
+          <div class="card matt animate__animated animate__fadeInUp">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
@@ -78,39 +88,41 @@
                 </div>
               </div>
               <div class="col-md-4 d-flex justify-content-end">
-                <img src="../Imagenes/My project-4.png" class="img-fluid" alt="..." />
+                <img src="../Imagenes/My project-4.png" class="img-fluid" alt="Imagen de Bart Simpson, en un estilo artístico de blanco y negro. Bart se presenta con una actitud desenfadada, con una mano en el bolsillo, mostrando su personalidad traviesa. Sobre la imagen, se superponen trazos estilo grafiti en tonos celeste y rosa, añadiendo un toque de dinamismo y originalidad. Esta imagen captura la esencia rebelde y juvenil de Bart." />
               </div>
             </div>
           </div>
         </section>
 
         
-
         <section class="bg">
-          <h2>Curiosidades</h2>
+          <div data-aos="fade-up">
+            <h2>Curiosidades</h2>
+          </div>
         </section>
 
         <section>
           <section class="cards">
-            <div class="cards__body">
-                <img src="../Imagenes/Cards-18.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Cards-18.png" alt="Imagen de Bart Simpson, en una pose de cuerpo entero. Bart sostiene su característica mochila en sus manos, mostrando su espíritu aventurero y rebelde. En su mochila, lleva un aerosol y una gomera, herramientas que simbolizan su afán por la travesura y la diversión. ">
                 <h2>Personalidad</h2>
                 <p>El cumpleaños de Bart es el 23 de febrero, aunque según el episodio 'Me casé con Marge' nació a principios del mes de Junio de 1981. En un capítulo, Marge consume una gota de champagne, mientras estaba embarazada, provocando la maldad y las puntas de pelo de Bart.</p>
             </div>
 
-            <div class="cards__body">
-                <img src="../Imagenes/Cards-20.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Cards-20.png" alt="Imagen de Bart Simpson en estilo de foto carnet, presentando una expresión neutral. Bart aparece en primer plano, mirando directamente a la cámara con seriedad. En esta imagen, se captura la esencia tranquila y enigmática de Bart, revelando una faceta más introspectiva de su personalidad.">
                 <h2>Michael Jackson y Bart </h2>
                 <p>Apareció en el vídeo original de Black or White de Michael Jackson junto a Homer en el sofá de la casa. También hay un póster de "Bartman" encima de la cama de Macaulay Culkin. Michael Jackson le escribio su propia cancion llamada "Do the Bartman</p>
             </div>
 
-            <div class="cards__body">
-                <img src="../Imagenes/Cards-19.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Cards-19.png" alt="Imagen de Bart Simpson, de cuerpo entero. Bart se encuentra apoyado sobre su patineta, mostrando su destreza y pasión por la aventura urbana. Con una mano en el bolsillo, transmite una actitud relajada y segura de sí mismo. Esta imagen captura la esencia juvenil y rebelde de Bart, representando su amor por el skateboarding y su deseo de explorar el mundo que lo rodea.">
                 <h2>Su voz</h2>
                 <p>Bart Simpson es interpretado por Nancy Cartwright, una actriz de voz estadounidense. Aunque Bart es un niño masculino, Cartwright, una mujer, ha dado vida al personaje desde el comienzo de la serie en 1989, utilizando una voz más aguda y característica.</p>
             </div>
 
         </section>
+
 
         <!--footer-->
 
@@ -128,7 +140,7 @@
             </ul>
           </footer>
         </div>
-
+        
       </header>
 
       <!--Script bootstrap-->
@@ -137,6 +149,14 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
       ></script>
+
+
+      <!--Script aos-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
 
     </body>
   </html>

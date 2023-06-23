@@ -12,10 +12,19 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
         crossorigin="anonymous"
       />
-      
+
       <!--link iconos de bootstrap-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+      <!--Link animation.css-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
       
+      <!--Link aos-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <!--Link a css-->
       <link rel="stylesheet" href="../css/style.css" />
 
@@ -23,9 +32,9 @@
     </head>
 
     <title>Lisa Simpson</title>
-    <meta name="description" content="Explora el fascinante mundo creado por Matt Groening, el genio detrás de esta exitosa franquicia. Aquí encontrarás una breve reseña de Matt Groening, así como información sobre sus creaciones más destacadas, como 'La vida en el infierno', 'Futurama' y 'Desencanto'.">
-    <meta name="keywords" content="Los Simpson, Matt Groening, Vida en el infierno, Futurama, Desencanto, creaciones de Matt Groening">
-
+    <meta name="description" content="Explora la biografía detallada de Lisa Simpson, el emblemático personaje de la famosa serie de televisión Los Simpson. Entrá y descubrí algunas curiosidades">
+  <meta name="keywords" content="Los Simpson, Lisa Simpson, Vida de Lisa Simpson, Curiosidades sobre Lisa Simpson">
+  
     <body>
       <header>
         <nav class="navbar navbar-expand-lg bg-nav">
@@ -66,7 +75,7 @@
         </nav>
 
         <section>
-          <div class="card matt">
+          <div class="card matt animate__animated animate__fadeInUp">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
@@ -78,7 +87,7 @@
                 </div>
               </div>
               <div class="col-md-4 d-flex justify-content-end">
-                <img src="../Imagenes/My project-5.png" class="img-fluid" alt="..." />
+                <img src="../Imagenes/My project-5.png" class="img-fluid" alt="Imagen de Lisa Simpson, luciendo su icónico vestido naranja en una pose de cuerpo entero. Lisa sostiene con amor a su fiel compañero, el gato negro Bola de Nieve, en sus manos." />
               </div>
             </div>
           </div>
@@ -87,25 +96,27 @@
         
 
         <section class="bg">
-          <h2>Curiosidades</h2>
+          <div data-aos="fade-up">
+            <h2>Curiosidades</h2>
+          </div>
         </section>
 
         <section>
           <section class="cards">
-            <div class="cards__body">
-                <img src="../Imagenes/Cards-14.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Cards-14.png" alt="Lisa Simpson, el querido personaje de Los Simpson, en una pose alegre de cuerpo entero. Lisa sonríe mientras sostiene una cesta llena de zanahorias en una mano, mostrando su amor por la naturaleza y su compromiso con una alimentación saludable. En su otra mano, sostiene con ternura a un encantador gusanito, revelando su fascinación por la vida y la conexión con la fauna. La expresión de felicidad en el rostro de Lisa al ver al gusanito muestra su sensibilidad y aprecio por el mundo que la rodea.">
                 <h2>Activista</h2>
                 <p>Lisa es una apasionada por el medio ambiente. A lo largo de la serie, ha participado en varias iniciativas y protestas para proteger la naturaleza y ha promovido la conciencia ambiental entre los habitantes de Springfield.</p>
             </div>
 
-            <div class="cards__body">
-                <img src="../Imagenes/Cards-15.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Cards-15.png" alt="Lisa irradia simpatía a través de su sonrisa luminosa y amigable. Su expresión refleja su personalidad ingeniosa y amable, capturando la esencia misma de Lisa. Esta imagen muestra a Lisa en su mejor momento, transmitiendo su carácter cálido y acogedor. ">
                 <h2>Rompiendo barreras</h2>
                 <p> Lisa Simpson ha sido retratada como una defensora de los derechos de las mujeres y ha abordado temas feministas en la serie. A través de su activismo y su lucha por la igualdad, ha demostrado ser un modelo a seguir para muchos espectadores.</p>
             </div>
 
-            <div class="cards__body">
-                <img src="../Imagenes/Cards-17.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Cards-17.png" alt="Lisa Simpson de perfil, se muestra de cuerpo entero tocando apasionadamente su instrumento favorito, el saxofón.">
                 <h2>Lisa y la música</h2>
                 <p>Aunque Lisa toca el saxofón en la serie, su instrumento musical preferido es el clarinete. Sin embargo, el creador de la serie, Matt Groening, decidió que el sonido del saxofón sería más reconocible y distintivo, por lo que se optó por ese instrumento en la mayoría de las interpretaciones musicales de Lisa.</p>
             </div>
@@ -137,6 +148,14 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
       ></script>
+
+
+      <!--Script aos-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
 
     </body>
   </html>

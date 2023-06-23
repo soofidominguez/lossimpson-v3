@@ -16,14 +16,23 @@
       <!--link iconos de bootstrap-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+      <!--Link animation.css-->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      
+      <!--Link aos-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <!--Link a css-->
       <link rel="stylesheet" href="../css/style.css" />
 
     </head>
 
     <title>Marge Simpson</title>
-    <meta name="description" content="Explora el fascinante mundo creado por Matt Groening, el genio detrás de esta exitosa franquicia. Aquí encontrarás una breve reseña de Matt Groening, así como información sobre sus creaciones más destacadas, como 'La vida en el infierno', 'Futurama' y 'Desencanto'.">
-    <meta name="keywords" content="Los Simpson, Matt Groening, Vida en el infierno, Futurama, Desencanto, creaciones de Matt Groening">
+    <meta name="description" content="Descubre la historia de Marge Simpson, uno de los personajes más queridos de la serie animada 'Los Simpson'. Conoce detalles sobre su vida, su relación con Homero, su papel como madre y esposa, así como las curiosidades y momentos destacados de su trayectoria en la serie.">
+    <meta name="keywords" content="Los Simpson, Marge Simpson, Vida de Marge Simpson, Curiosidades sobre Marge Simpson">
 
     <body>
       <header>
@@ -64,7 +73,7 @@
         </nav>
 
         <section>
-          <div class="card matt">
+          <div class="card matt animate__animated animate__fadeInUp">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
@@ -77,7 +86,7 @@
                 </div>
               </div>
               <div class="col-md-4 d-flex justify-content-end">
-                <img src="../Imagenes/My project-3.png" class="img-fluid" alt="..." />
+                <img src="../Imagenes/My project-3.png" class="img-fluid" alt="Marge Simpson, se muestra desde el torso hacia arriba con su característico vestido verde y su pelo azul. Tiene una expresión sonriente y divertida. Dentro de su pelo, se asoma su hija Maggie, quien también sonríe. Esta imagen captura la relación afectuosa y cómica entre Marge y Maggie en la popular serie animada" />
               </div>
             </div>
           </div>
@@ -86,25 +95,27 @@
         
 
         <section class="bg">
-          <h2>Curiosidades</h2>
+          <div data-aos="fade-up">
+            <h2>Curiosidades</h2>
+          </div>
         </section>
 
         <section>
           <section class="cards">
-            <div class="cards__body">
-                <img src="../Imagenes/Marge.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Marge.png" alt="Marge Simpson, se muestra desde el torso hacia arriba. Tiene una expresión sonriente y levanta una mano con la palma abierta, como si estuviera mostrando algo. Esta imagen transmite una sensación de alegría y sugiere que hay información adicional disponible en la tarjeta relacionada.">
                 <h2>Inspiración</h2>
                 <p>Su nombre de soltera es: Marjorie Jacqueline Bouvier. Matt Groening uso de inspiración para crear a Marge a su propia madre, Margaret Ruth Groening. Quien se enamoró mientras cursaba estudios en Linfield College en Oregón de un chico llamado Homer Groening, y, según la pieza del periódico de su muerte, lo hizo porque “él la hacía reir más”. </p>
             </div>
 
-            <div class="cards__body">
-                <img src="../Imagenes/Fem.png" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Fem.png" alt="Marge Simpson en su versión juvenil. Tiene el cabello suelto y azul como es característico, pero no recogido hacia arriba. Viste una remera naranja con cuello azul y pantalón azul. En la imagen, sostiene con una mano la punta de un sosten (ropa interior femenina) y con la otra mano parece estar prendiéndolo fuego. Esta representación visual muestra a Marge de manera inusual y sorprendente, transmitiendo una sensación de rebeldía.">
                 <h2>Rompiendo barreras</h2>
                 <p>Marge ha desafiado los roles de género tradicionales, ha mostrado independencia y fuerza en diversas situaciones. Buscó oportunidades laborales fuera del hogar y cuestinó las normas de género establecidas,tomó decisiones en beneficio de sí misma y de su familia. Además, ha demostrado su apoyo a Lisa Simpson, su hija, en su lucha por la igualdad y el empoderamiento de las mujeres.</p>
             </div>
 
-            <div class="cards__body">
-                <img src="../Imagenes/Marge 3.jpg" alt="">
+            <div class="cards__body" data-aos="flip-left">
+                <img src="../Imagenes/Marge 3.jpg" alt="Marge Simpson sonriente y expresiva. Levanta ambas manos en un gesto de alegría. Con una mano, parece estar tocándose el cabello, mientras que la otra mano la extiende hacia adelante en un gesto enérgico. Su cabello azul característico está recogido en su clásico peinado alto. Marge irradia felicidad y entusiasmo.">
                 <h2>¿Cabello azul?</h2>
                 <p>Aunque es conocida por su distintivo cabello azul, se ha revelado en un episodio de la serie que su cabello es naturalmente de color gris. En el episodio "Simpson and Delilah", Marge visita un salón de belleza y se tiñe el cabello de azul por error, pero decide mantenerlo de ese color.</p>
             </div>
@@ -114,16 +125,16 @@
         <!--footer-->
 
         <div class="container">
-          <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top footer">
-            <p class="col-md-4 mb-0 text-body-secondary"> 2023 | Sofía Dominguez</p>
+          <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top footer w-100">
+            <p class="col-md-4 mb-0 text-body-secondary col-md-4 text-md-start ms-md-auto"> 2023 | Sofía Dominguez</p>
         
             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
               <img src="../Imagenes/Logo.png" class="logo-footer" alt="El logo de Los Simpson: pero en ingles con el nombre 'The Simpsons' escrito en una tipografía amarilla brillante. Las letras son de estilo redondeado y están dispuestas de forma armoniosa. La palabra 'The' está ubicada encima de la palabra 'Simpsons', y ambas tienen un efecto de sombra que las hace destacar sobre un fondo violeta sólido. Este icónico logo es reconocible al instante y representa la marca de la popular serie animada 'Los Simpson'.">
             </a>
         
-            <ul class="nav col-md-4 justify-content-end">
+            <ul class="nav col-md-4 justify-content-end justify-content-md-rigth">
               <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-              <li class="nav-item"><a href="https://www.linkedin.com/in/sofia-lorena-dominguez/" class="nav-link px-2 text-body-secondary" target="_blank">Contacto</a></li>
+              <li class="nav-item text-right"><a href="https://www.linkedin.com/in/sofia-lorena-dominguez/" class="nav-link px-2 text-body-secondary" target="_blank">Contacto</a></li>
             </ul>
           </footer>
         </div>
@@ -136,6 +147,12 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
       ></script>
+
+      <!--Script aos-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
     </body>
   </html>

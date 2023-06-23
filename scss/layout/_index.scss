@@ -1,31 +1,22 @@
 
-
 .matt {
     @include fit(100%,cover);
-    height: 100vh; 
+    height: 90vh; 
     border-radius: 0;
     border: none;
-    padding: 0px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    padding: 30px;
 
     .row {
         @include space(0px,0px)
     }
 
+}
 
-    .img-fluid { 
-        margin: auto;
-        object-fit: contain;
-    }
+.card-body {
+    margin: 30px ;
 }
 
 
-
-.card-body {
-    margin: 50px;
 
     .card-title { 
         font-size: 3vw;
@@ -33,9 +24,13 @@
     }
 
     .card-text { 
-        font-size: 1.3vw;
+        font-size: 1.5vw;
         margin: 10px 50px 20px 0px;   
     }
+
+
+.cards {
+    display: block;
 }
 
 .bg {
@@ -48,9 +43,10 @@
     border-radius: 0;
     border: none;
 
+
     h2 {
         font-weight: bold;
-        font-size: 2.5vw;
+        font-size: 3vw;
         color: #191919;
         letter-spacing: 2px;
     }
@@ -94,13 +90,13 @@
         }
     
         h2 {
-            font-size: 2vw;
+            font-size: 2.7vw;
             padding:5px 20px;
             font-weight: bold;
         }
     
         p {
-            font-size: 1.3vw;
+            font-size: 1.5vw;
             padding:5px 20px;
         }
     }
@@ -147,7 +143,7 @@
 
     p {
             padding: 10px;
-            font-size: 1.3vw;
+            font-size: 1.5vw;
             color: $navbar-background;
     }
 }
